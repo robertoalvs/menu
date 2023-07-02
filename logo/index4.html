@@ -13,11 +13,27 @@
             background-color: red;
             margin: auto;
             margin-top: 50px;
+            position: relative;
+        }
+
+        #teste::after, #teste::before {
+            content: "";
+            position: absolute;
+            background-color: blue;
+            width: 300px;
+            height: 300px;
+            top: -25px;
         }
 
         #teste::after {
 
             left: -25px;
+            transform: rotate(-45deg);
+        }
+
+        #teste::before {
+
+            right: -25px;
             transform: rotate(-45deg);
         }
     </style>
